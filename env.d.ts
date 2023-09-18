@@ -5,3 +5,7 @@ declare module "*.vue" {
     const component: DefineComponent<typeof DefineComponent>;
     export default component;
 }
+
+declare module '*.mjs' {
+    
+}
