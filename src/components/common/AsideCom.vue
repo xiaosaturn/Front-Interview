@@ -13,11 +13,15 @@
       <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
         :class="state.activeIndex == 4 ? 'active' : ''" @click="onClick(4)">数学鬼才</div>
       <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
-        :class="state.activeIndex == 5 ? 'active' : ''" @click="onClick(5)">语言探究</div>
+        :class="state.activeIndex == 5 ? 'active' : ''" @click="onClick(5)">文学探索</div>
       <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
-        :class="state.activeIndex == 6 ? 'active' : ''" @click="onClick(6)">音乐赏析</div>
+        :class="state.activeIndex == 6 ? 'active' : ''" @click="onClick(6)">影视剧赏析</div>
       <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
-        :class="state.activeIndex == 7 ? 'active' : ''" @click="onClick(7)">其他</div>
+        :class="state.activeIndex == 6 ? 'active' : ''" @click="onClick(6)">娱乐占星</div>
+      <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
+        :class="state.activeIndex == 7 ? 'active' : ''" @click="onClick(7)">常用工具</div>
+      <div class="item-cls text-[white] w-[90%] h-[40px] text-[22px] leading-[40px] text-center cursor-pointer"
+        :class="state.activeIndex == 7 ? 'active' : ''" @click="onClick(8)">其他</div>
     </div>
   </div>
 </template>
@@ -38,6 +42,7 @@ const onClick = (index: number) => {
   switch(index) {
     case 1: router.push({ path: '/' }); return;
     case 2: router.push({ path: '/code-life' }); return;
+    case 3: router.push({ path: '/reading-book' }); return;
   }
 }
 </script>

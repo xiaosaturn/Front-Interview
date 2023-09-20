@@ -1,10 +1,10 @@
 <template>
-    <div class="footer-container bg-[gray] flex justify-center items-center h-[40px]">
+    <div class="footer-container flex justify-center items-center h-[40px]">
         <div class="mr-[60px] font-bold">Copyright © Created By MasterH</div>
         <div class="font-bold a-div" @click="go2Beian">沪ICP备2023004796号</div>
     </div>
 </template>
-  
+
 <script setup lang="ts">
 
 const go2Beian = () => {
@@ -14,7 +14,7 @@ const go2Beian = () => {
 
 <style scoped>
 .footer-container {
-    background-color:#ccc;
+    background-color: rgba(200, 200, 200, 0.3);
 }
 .a-div {
     color: #409EFF;

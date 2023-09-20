@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import('../views/code-life/CodeLife.vue')
     },
     {
+      path: '/reading-book',
+      name: 'readingBook',
+      component: () => import('../views/reading/ReadingBook.vue')
+    },
+    {
       path: '/mypage',
       name: 'mypage',
       component: () => import('../views/MyPage.vue')
