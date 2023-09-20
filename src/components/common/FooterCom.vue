@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container bg-[gray] flex justify-center items-center h-[40px]">
         <div class="mr-[60px] font-bold">Copyright © Created By MasterH</div>
-        <div class="font-bold a-div" @click="go2Beian">沪ICP备2023004796号-1</div>
+        <div class="font-bold a-div" @click="go2Beian">沪ICP备2023004796号</div>
     </div>
 </template>
   
@@ -17,6 +17,7 @@ const go2Beian = () => {
     background-color:#ccc;
 }
 .a-div {
+    color: #409EFF;
     cursor: pointer;
 }
 .a-div:hover {
