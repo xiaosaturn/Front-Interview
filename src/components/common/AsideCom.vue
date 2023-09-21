@@ -1,5 +1,5 @@
 <template>
-  <div class="aside-container flex flex-col items-center pt-4 w-[200px] bg-[#3b82f6]">
+  <div class="aside-container flex flex-col items-center pt-4 w-[200px] bg-[#41A5E0]">
     <el-image class="w-[80px] h-[80px] rounded-[40px]"
       src="https://image.xiaosaturn.com/Photo/2023918/175100/ymf4n2j0tq1695030660832.png"></el-image>
     <div class="text-[white] font-[bold] text-[28px]">MasterH</div>

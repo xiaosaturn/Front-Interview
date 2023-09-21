@@ -6,6 +6,7 @@
         <RouterView class="flex-1" />
         <FooterCom />
     </div>
+    <RightNavItem />
   </div>
 </template>
 
@@ -13,6 +14,7 @@
 import HeaderCom from '@/components/common/HeaderCom.vue';
 import FooterCom from '@/components/common/FooterCom.vue';
 import AsideCom from '@/components/common/AsideCom.vue';
+import RightNavItem from '@/components/common/RightNavItem.vue';
 import { RouterLink, RouterView } from 'vue-router'
 
 </script>

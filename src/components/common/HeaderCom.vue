@@ -1,5 +1,5 @@
 <template>
-    <div class="header-container h-[60px]  flex items-center justify-between">
+    <div class="header-container h-[60px]  flex items-center justify-between" id="headerBar">
         <div>左边</div>
         <div>
             <el-input class="h-[40px]" placeholder="请输入你想搜索的内容"></el-input>

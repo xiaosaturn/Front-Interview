@@ -15,7 +15,7 @@
         <div class="flex items-center mb-[10px]">
           <el-image class="w-[160px] h-[160px] mr-6" :src="state.randomAvatar" :previewSrcList="[state.randomAvatar]"></el-image>
           <div class="flex-[1]">
-            <div class="text-[#ff11ffe2] font-bold text-[28px]">小伙子，开启今天的能量吧</div>
+            <div class="text-[#ff11ffe2] font-bold text-[28px]">小伙伴们，开启今天的能量</div>
             <div class="text-[gray]">今天是{{ state.dateTimeStr }}</div>
           </div>
         </div>
@@ -29,7 +29,9 @@
     <div>
       <el-descriptions title="最新上线">
         <el-descriptions-item v-for="(item,index) of 6" :key="index">
-          <el-card class="cursor-pointer" shadow="hover">我啊</el-card>
+          <el-card class="cursor-pointer" shadow="hover">
+            <FunctionItem />
+          </el-card>
         </el-descriptions-item>
       </el-descriptions>
       <el-divider />
@@ -55,6 +57,7 @@ import axios from 'axios'
 import { randomString } from '@/utils/randomString.ts'
 import { displayDateTime } from '@/utils/general.ts'
 import { onMounted, reactive } from 'vue'
+import FunctionItem from '@/components/FunctionItem.vue'
 
 const state = reactive({
   randomAvatar: 'https://image.xiaosaturn.com/Photo/2023920/170044/jvgv529yyadefault-avatar.png',
