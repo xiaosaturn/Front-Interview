@@ -27,9 +27,12 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { reactive, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import router from '../../router';
+import { useNavIndexStore  } from '@/stores/leftNavStore';
+
+const store = useNavIndexStore();
 
 const state = reactive({
   activeIndex: 1,
@@ -39,12 +42,21 @@ const onClick = (index: number) => {
     return;
   }
   state.activeIndex = index;
+  store.updateNavIndex(index);
+  localStorage.setItem('navIndex', String(index));
+  console.log('更新之后：', store.navIndex);
   switch(index) {
     case 1: router.push({ path: '/' }); return;
     case 2: router.push({ path: '/code-life' }); return;
     case 3: router.push({ path: '/reading-book' }); return;
   }
 }
+
+onMounted(() => {
+  if (localStorage.getItem('navIndex')) {
+    state.activeIndex = Number(localStorage.getItem('navIndex'));
+  }
+})
 </script>
 
 <style lang="scss" scoped>
