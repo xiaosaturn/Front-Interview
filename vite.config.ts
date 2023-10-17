@@ -18,5 +18,8 @@ export default defineConfig({
   define: {
     'process.env': {},
     'process.argv': {}
+  },
+  server: {
+    host: '0.0.0.0'
   }
 })

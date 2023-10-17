@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-y-scroll p-[20px]" style="z-index:1">
     <div class="flex justify-between">
-      <div class="text-[22px] text-[#333] font-bold flex-[1]">
+      <div class="text-[22px] text-[#333] dark:text-white font-bold flex-[1]">
         <span style="opacity: 0">你好</span>欢迎光临黄师傅的杂货铺，这里有很多杂货，比如程序猿的代码人生、精品阅读、音乐赏析、常用工具等，包罗万象，应有尽有。🤠🤠🤠
         <br />
         <span style="opacity: 0">你好</span>做这个网站的初衷就是将自己平时遇到的一些问题、解决方案、心得体会、实用工具等搜罗到一起，免得后面还得一个一个去找，Chrome的收藏夹已经有很多了。🥴🥴🥴
